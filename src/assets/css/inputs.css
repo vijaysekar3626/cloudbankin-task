@@ -1,0 +1,164 @@
+::placeholder{
+  color: #ccc;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-family: var(--ui_bold);
+}
+/* custom select dropdown css start */
+.custom-dropdown {
+  position: relative;
+  width: 97%;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-header {
+  padding: 10px;
+  border: 2px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  border-radius: 5px;
+}
+
+.dropdown-arrow {
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  height: 8px;
+  width: 8px;
+  transform: rotate(45deg);
+}
+
+.dropdown-arrow.open {
+  transform: rotate(-135deg);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover,
+.dropdown-option.selected {
+  background: #f0f0f0;
+}
+.placeholder.show-placeholder{
+  color: #ccc;
+}
+/* custom select dropdown css end */
+
+.input_container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+}
+.label_class{
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #313131;
+  font-family: var(--ui_bold);
+}
+.input_container.col_3 {
+  display: inline-block;
+  width: 33.33%;
+}
+.input_container.col_3.with_eye label::after{
+    content: 'i';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #000;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+.input_container.col_5 {
+  display: inline-block;
+  width: 50%;
+}
+.input_container.col_5 input {
+  display: block;
+  width: 95%;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input_container.col_5.w_full input{
+  width: 100%;
+}
+.input_container.col_3 input {
+  display: block;
+  width: 95%;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input_container.col_3 .custom-dropdown {
+  width: 95%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.input_container.col_3.w_full .custom-dropdown{
+  width: 100%;
+}
+.input_class {
+  min-height: 50px;
+}
+input[type=file] {
+  opacity: 0;
+  height: 70px;
+  z-index: 2;
+}
+.error-message{
+  color: red;
+  display: block;
+  height: 25px;
+  min-height: 25px;
+  font-size: 14px;
+}
+textarea{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+input::file-selector-button {
+  background-color: #fff;
+  border: none;
+  color: #fff;
+  
+}
+.custom_file_upload {
+  border: 1px dashed #ccc;
+  position: absolute;
+  height: 51%;
+  width: 100%;
+  top: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+.file_upload {
+  position: relative;
+}

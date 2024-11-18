@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "avi_light";
+    src: url("/src/assets/fonts/avenier/AvenirLTStd-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "avi_medium";
+    src: url("/src/assets/fonts/avenier/AvenirLTStd-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "avi_bold";
+    src: url("/src/assets/fonts/avenier/AvenirLTStd-Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: "avi_black";
+    src: url("/src/assets/fonts/avenier/AvenirLTStd-Black.otf") format("opentype");
+}
+
